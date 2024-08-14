@@ -1,4 +1,33 @@
-SOLID - 
+1. OOPs -
+Object-Oriented Programming (OOP) is a programming paradigm that models software entities as objects, which have data (attributes) and behaviors (methods), and interact with each other to solve problems. It's like viewing the world as a collection of interacting objects.
+
+"Object-Oriented Programming is a programming approach where we design software using objects, which are instances of classes. These objects encapsulate data and behaviors, providing a modular and intuitive way to represent real-world entities and their interactions."
+
+Eg. CAR, Bank Account
+
+2. Module or Modular approach - 
+
+In the context of programming, a module refers to a self-contained unit of code that performs a specific functionality. It encapsulates related variables, functions, and classes, providing a way to organize and structure code effectively. Modules help in breaking down large programs into smaller, manageable parts, making the code more modular and easier to maintain, reuse, and understand.
+
+3. Object and Class
+
+4. Pillar of OOPs
+    1. Data Abstraction
+    2. Encapsulation
+    3. Inheritance - Single, MultiLevel, Hierarchical, Multiple (Diamond problem).
+    4. Polymorphism
+        1. Compile Time/ Static polymorphism/ method overloading
+        2. Run Time / Dynamic polymorphism/ method overriding
+
+4. Relationship 
+    1. Is - a relationship
+    2. Has-a relationship
+
+* "is-a" Relationship: The "is-a" relationship, also known as inheritance or specialization, signifies that one class is a subtype of another class. Eg. Shape, Circle, Rectangle, Square 
+* "has-a" Relationship: The "has-a" relationship, also known as composition or aggregation, signifies that one class has another class as a component or member. Eg. a Car, which has Engine, Wheel, and Seat
+
+5. SOLID - 
+
 S - Single Responsibility Priciple
 O - Open/Closed Principle
 L - Liskov Substitution Principle
@@ -13,9 +42,8 @@ Advantages:
 5. Flexible software
 6. Reduce complexity
 
-
-S -> A class should have only one reason to change
-O -> Open for extention but closed for modification
-L ->
-I ->
-D ->
+S - Single Responsibility Principle —> A class has only 1 reason to change
+O - Open/Close Principle —> Open for extension but close for modification
+L - Liskov Substitution Principle —> If class B is  subtype of class A, then we should be able to replace object of A with B without breaking the behaviour of the program. Subclass should extend the capacity of parent class not narrow it down.
+I - Interface Segmented Principle —> Interface should be such that client should not implement unnecessary functions that they do not need.
+D - Dependency Inversion Principle —> Class should depend on interfaces rather than concrete class
