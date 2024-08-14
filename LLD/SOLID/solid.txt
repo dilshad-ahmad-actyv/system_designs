@@ -1,0 +1,18 @@
+SOLID - 
+S - Single Responsibility Priciple
+O - Open/Closed Principle
+L - Liskov Substitution Principle
+I - Interface segmented Principle
+D - Dependency Inversion Principle
+
+Advantages:
+1. helps to write a better Closed
+2. Avoid duplicate Code
+3. Easy to maintain
+4. Easy to understand
+5. Flexible software
+6. Reduce complexity
+
+
+S -> A class should have only one reason to change
+O -> Open for extention but closed for modification
