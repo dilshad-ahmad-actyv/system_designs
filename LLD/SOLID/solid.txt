@@ -6,7 +6,7 @@ I - Interface segmented Principle
 D - Dependency Inversion Principle
 
 Advantages:
-1. helps to write a better Closed
+1. helps to write a better Code
 2. Avoid duplicate Code
 3. Easy to maintain
 4. Easy to understand
@@ -16,3 +16,6 @@ Advantages:
 
 S -> A class should have only one reason to change
 O -> Open for extention but closed for modification
+L ->
+I ->
+D ->
