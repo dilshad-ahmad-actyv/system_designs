@@ -47,3 +47,40 @@ O - Open/Close Principle —> Open for extension but close for modification
 L - Liskov Substitution Principle —> If class B is  subtype of class A, then we should be able to replace object of A with B without breaking the behaviour of the program. Subclass should extend the capacity of parent class not narrow it down.
 I - Interface Segmented Principle —> Interface should be such that client should not implement unnecessary functions that they do not need.
 D - Dependency Inversion Principle —> Class should depend on interfaces rather than concrete class
+
+6. Design Patterns - 
+Design patterns are general reusable solutions to common problems in software design.
+
+Types - They are categorized into several types based on their purposes and use cases.
+
+1. Creational Patterns - 
+    Creational patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
+        a. Singleton
+        b. Factory methods(*)
+        c. Abstract Factory
+        d. Builder
+        e. Prototype
+    
+2. Structural Patterns - 
+    Structural patterns deal with object composition and typically help ensure that if one part of a system changes, the entire system doesn't need to do the same. They help in composing classes and objects to form larger structures.
+        a. Adapter
+        b. Bridge
+        c. Composite(*)
+        d. Decorator
+        e. Facade
+        f. Flyweight
+        g. Proxy
+
+3. Behavioral Patterns - 
+    Behavioral patterns focus on communication between objects, what goes on between objects and how they operate together. They are concerned with algorithms and the assignment of responsibilities between objects.
+        a. Chain of Responsibility
+        b. Command
+        c. Interpreter
+        d. Iterator
+        e. Mediator
+        f. Memento
+        g. Observer(*)
+        h. State
+        i. Strategy
+        j. Template Method
+        k. Visitor
