@@ -57,7 +57,7 @@ Types - They are categorized into several types based on their purposes and use 
     Creational patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
         a. Singleton
         b. Factory methods(*)
-        c. Abstract Factory
+        c. Abstract Factory*
         d. Builder(*)
         e. Prototype
     
