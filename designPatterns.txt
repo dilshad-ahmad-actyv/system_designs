@@ -60,6 +60,7 @@ Types - They are categorized into several types based on their purposes and use 
         c. Abstract Factory*
         d. Builder(*)
         e. Prototype
+        f. Object Pool
     
 2. Structural Patterns - 
     Structural patterns deal with object composition and typically help ensure that if one part of a system changes, the entire system doesn't need to do the same. They help in composing classes and objects to form larger structures.
@@ -81,6 +82,6 @@ Types - They are categorized into several types based on their purposes and use 
         f. Memento
         g. Observer(*)
         h. State
-        i. Strategy
+        i. Strategy(*)
         j. Template Method
         k. Visitor
