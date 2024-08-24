@@ -1,0 +1,132 @@
+A **Low-Level Design (LLD)** for Splitwise would detail the system's architecture, components, and the interactions between them at a granular level. Here’s a breakdown of what the LLD for Splitwise might look like:
+
+### 1. **Introduction**
+   - **Purpose:** To provide a detailed design of the Splitwise system, explaining how each component is structured and interacts with others.
+   - **Scope:** Covers all modules, classes, interfaces, and their relationships.
+
+### 2. **System Overview**
+   - **Use Case:** Splitwise is a bill-splitting application that allows users to track expenses, split bills, and settle up with friends.
+
+### 3. **Component Design**
+
+#### 3.1 **User Management**
+   - **User Entity:**
+     - Attributes: `userID`, `name`, `email`, `phone`, `profilePicture`
+     - Methods: `register()`, `login()`, `logout()`, `updateProfile()`
+   - **User Repository:**
+     - Interfaces with the database to perform CRUD operations for user data.
+   - **Authentication Service:**
+     - Handles login, logout, and session management.
+   - **Validation Service:**
+     - Ensures the user data is correct before processing (e.g., email format, password strength).
+
+#### 3.2 **Groups and Friends**
+   - **Group Entity:**
+     - Attributes: `groupID`, `groupName`, `createdBy`, `members[]`, `expenses[]`
+     - Methods: `createGroup()`, `addMember()`, `removeMember()`, `deleteGroup()`
+   - **Friendship Entity:**
+     - Attributes: `friendshipID`, `user1ID`, `user2ID`
+     - Methods: `addFriend()`, `removeFriend()`
+   - **Group Repository:**
+     - Manages data persistence for groups.
+   - **Friendship Repository:**
+     - Manages relationships between users.
+
+#### 3.3 **Expense Management**
+   - **Expense Entity:**
+     - Attributes: `expenseID`, `amount`, `description`, `createdBy`, `splitType`, `participants[]`, `payments[]`, `date`
+     - Methods: `addExpense()`, `editExpense()`, `deleteExpense()`
+   - **Payment Entity:**
+     - Attributes: `paymentID`, `payerID`, `payeeID`, `amount`, `date`
+     - Methods: `addPayment()`, `editPayment()`, `deletePayment()`
+   - **Expense Service:**
+     - Handles logic for splitting expenses based on different methods: `equalSplit()`, `percentageSplit()`, `shareSplit()`.
+   - **Expense Repository:**
+     - Interfaces with the database to perform CRUD operations on expenses.
+   - **Payment Repository:**
+     - Manages payment records.
+
+#### 3.4 **Notifications**
+   - **Notification Entity:**
+     - Attributes: `notificationID`, `userID`, `message`, `status`, `date`
+     - Methods: `createNotification()`, `markAsRead()`
+   - **Notification Service:**
+     - Sends notifications via email, SMS, or in-app.
+   - **Notification Repository:**
+     - Stores and retrieves notifications.
+
+#### 3.5 **Settlement and Balances**
+   - **Balance Entity:**
+     - Attributes: `balanceID`, `userID`, `amountOwed`, `amountLent`
+     - Methods: `updateBalance()`, `getBalance()`
+   - **Settlement Entity:**
+     - Attributes: `settlementID`, `payerID`, `payeeID`, `amount`, `date`
+     - Methods: `settleUp()`
+   - **Balance Service:**
+     - Computes and manages user balances.
+   - **Settlement Service:**
+     - Manages the logic for settling debts between users.
+   - **Balance Repository:**
+     - Handles data persistence for user balances.
+   - **Settlement Repository:**
+     - Manages settlement records.
+
+### 4. **Database Design**
+   - **Schema:** Tables for `Users`, `Groups`, `Expenses`, `Payments`, `Balances`, `Settlements`, and `Notifications`.
+   - **Relationships:**
+     - `Users` have many `Groups` and `Expenses`.
+     - `Groups` have many `Expenses`.
+     - `Expenses` have many `Payments`.
+
+### 5. **API Design**
+   - **User APIs:**
+     - `POST /register`: Register a new user.
+     - `POST /login`: User login.
+     - `PUT /user/{id}`: Update user profile.
+   - **Group APIs:**
+     - `POST /group`: Create a new group.
+     - `POST /group/{id}/member`: Add a member to a group.
+   - **Expense APIs:**
+     - `POST /expense`: Add a new expense.
+     - `PUT /expense/{id}`: Edit an existing expense.
+     - `DELETE /expense/{id}`: Delete an expense.
+   - **Settlement APIs:**
+     - `POST /settle`: Settle up an expense between users.
+
+### 6. **Sequence Diagrams**
+   - Diagrams showing interactions for:
+     - **User Registration**
+     - **Adding an Expense**
+     - **Settling a Debt**
+     - **Notification Flow**
+
+### 7. **Error Handling**
+   - **Common Errors:** Invalid input, user not found, insufficient permissions.
+   - **Exception Handling Mechanism:** Custom exceptions with appropriate HTTP status codes.
+
+### 8. **Security Considerations**
+   - **Authentication:** JWT tokens for session management.
+   - **Authorization:** Role-based access control (RBAC).
+   - **Data Encryption:** Encrypt sensitive data like passwords and payment details.
+
+### 9. **Testing Plan**
+   - **Unit Tests:** For individual services and methods.
+   - **Integration Tests:** For API endpoints and database interactions.
+   - **Performance Tests:** Load testing for scalability.
+  
+### 10. **Deployment Architecture**
+   - **Microservices or Monolithic Deployment:** Depending on the scale.
+   - **Database:** SQL or NoSQL based on use case.
+   - **Load Balancer:** For handling multiple requests efficiently.
+   - **Containerization:** Using Docker for consistent environments.
+
+### 11. **Monitoring and Logging**
+   - **Monitoring Tools:** To track system performance and uptime.
+   - **Logging Mechanism:** Centralized logging for debugging and audit trails.
+
+### 12. **Future Enhancements**
+   - **Currency Conversion:** For international users.
+   - **Recurring Expenses:** Automation for regular bills.
+   - **Advanced Splitting Logic:** Custom splitting based on conditions.
+
+This LLD serves as a guide for developers to understand the internal workings of the Splitwise system and ensures consistency across the implementation.
