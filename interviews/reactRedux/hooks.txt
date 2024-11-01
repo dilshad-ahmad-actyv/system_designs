@@ -1,0 +1,20 @@
+ what is hooks? why use it? alternatives.? react hook rules
+ 1. useState
+ 2. useReducer
+ 3. useContext
+ 4. useEffect
+ 5. useLayoutEffect
+ 6. useCallback
+ 7. useMemo
+ 8. useRef
+ 9. useImperativeHandle
+ 10. useDebugValue
+ 11. useDeferredValue
+ 12. useId
+ 13. useSyncExternalStore
+ 14. useTransition
+ 15. Custom hooks
+ 16. lazy
+ 17. forwardRef
+ 18. Context API
+ 19. memo

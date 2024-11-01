@@ -1,0 +1,6 @@
+Decompose: Monolithic -> Microservices
+Way -> Strangler way (Gradually)
+
+Split/Decompose
+ - Business capabilities
+ - Domain Driven -> Subdomain

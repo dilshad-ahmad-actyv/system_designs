@@ -1,0 +1,43 @@
+1. What is Reactjs? advantages and limitations, alternatives
+2. Rendering - client side and server side
+3. DOM vs VDOM - Diffing algorith, Batch updates
+4. life cycle - render/mount/paint
+5. side effects in react
+6. Memory Leak
+7. JSX
+8. Components vs props
+9. State and state management
+10. events
+11. Controlled vs Uncontrolled Components
+12. Prop drilling
+13. Composition vs Inheritance
+14. Thinking in React
+15. Accessibility
+16. Code-Splitting
+17. Context
+18. Error Boundaries
+19. Forwarding Refs
+20. Fragments
+21. Higher Order Components
+22. Portals
+23. Profiler
+24. React without ES6
+25. React without JSX
+26. Reconciliation
+27. Refs and the DOM
+28. React with TypeScript
+29. Strict Mode? usecase?
+30. Web Components
+31. Components - Fragements, Profiler, StrictMode, Suspense
+32. forwardRef
+33. lazy
+34. memo 
+35. Hot Reloading vs. Live Reloading
+36. keys
+37. functional vs class Components
+38. VDOM and how it works? what algoriths ?
+39. React Router*
+40. Name a few techniques to optimize React app performance.*
+41. Advanced Reactjs Questions - https://www.interviewbit.com/react-interview-questions/#name-few-techniques-to-optimize-react-app-performance
+42. Declarative vs imperative programming
+43. Props vs. State

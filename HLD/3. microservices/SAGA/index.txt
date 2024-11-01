@@ -1,0 +1,11 @@
+Data Management in microservices
+- Database for each services -> SAGA(It solves ACID problems) and CQRS(it solves Join problems)
+- Shared database for all services - Negative part is Scalability.
+
+SAGA - Sequence of Local Transactions -> Event based updation 
+     - Rollback -> failure events -> based deletion
+
+SAGA 
+ - Choreography
+ - Orchestration
+

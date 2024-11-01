@@ -1,0 +1,6 @@
+1. Firewalls
+2. Gateways
+3. Routers 
+4. OSI vs TCP/IP model
+5. HUB, Switch, Router, Bridge
+6. IP and MAC Address

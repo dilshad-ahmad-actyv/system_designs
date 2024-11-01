@@ -1,0 +1,73 @@
+1. What is nodejs?
+2. Why nodejs? pros and cons
+3. process? 
+4. How to pass arguments from terminal and use it in the file? - process.argv
+5. How env file works?
+6. REPL
+7. what is console?
+8. core packages. - readline, path, http etc.
+9. NPM - init, install, list, view, update | NPM INSTALL vs NPM CI
+10. npm vs npx
+11. module? - A self-contained piece of code that encapsulates specific functionality.
+12. package.json vs package-lock.json
+13. Semantic versioning - ^, ~ eg. '^4.18.2', ~4.18.2 - major, minor and patch
+14. Error handling best practices
+15. FileSystem and path module - join(relative path) vs resolve(absolute path)
+16. Callback, callback hell
+17. Sync/Async, Promises, Async/Await
+18. Promise chaining
+19. Promise - all, race, any, allSettled etc.
+20. API? REST API?
+21. Vanila Nodejs CRUP REST API
+22. Http/Https, SSL/TLS
+23. Browser, Server and Search Engine
+24. Route vs Endpoint
+25. PreFlight request, CORS, Options method
+26. Middleware
+27. event-driven*
+28. Nodejs - single threaded or multi-threaded
+29. Event-loop
+30. Components of Node.js - Event Loops, Callback Queue, Thread Pool, Child Processes
+31. Validation, Authentication, Authorization.
+32. JWT and how it works
+33. Auth0 Fine-Grained Authorization.
+34. CORS
+35. Cookies
+36. Why should we use JSON Web Tokens? - JWT vs Simple Web Tokens (SWT) and Security Assertion Markup Language Tokens (SAML).
+37. Auth0 by Okta?
+38. Auth0 vs Auth1.0 vs Auth2.0?
+39. Auth0 vs JWT
+40. Multi-threading and single-threaded
+41. Streaming
+42. development, staging, production
+43. Status Codes and uses
+44. Port, URL, URI etc.
+45. cURL
+46. Sockets
+47. www.
+48. .com, .in, .gov, .org, .net
+49. Operating System
+50. Memory and Memory Management, RAM, ROM etc.
+51. Web, Net, Internet, Intranet
+52. Computer
+53. CPU vs GPU
+54. MotherBoard
+55. ICANN
+56. Domain name, Top Level Domain
+57. IP address
+
+1. Docker*
+2. Kubernetes*
+3. AWS*
+4. CI/CD*
+5. Linux*
+6. Deployment*
+7. Jenkins*
+8. Git and GitHub, GitLab*
+
+
+Bedbook
+1. Role based access
+2. UI
+3. Payment
+4. Map

@@ -1,0 +1,28 @@
+1. 
+# Network Protocols - 7 Layers
+# Layers of Protocols - OSI (Open Systems Interconnection) model or the TCP/IP model.
+# What is Client Server model - HTTP, FTP, SMTP, Web sockets
+# Peer to Peer model(learn about web sockets) - Web RTC, TCP vs UDP
+# HTTP vs TCP vs UDP vs FTP vs SMTP(Send mail)/IMAP(receive mail)(POP3, IMAP)
+
+2. 
+# Latency vs thoughput
+# Availability and Consistency(CAP theorem)
+# Performance vs Scalability
+ - Horizontal and vertical
+
+3. 
+# API Design
+    - REST API
+    - Sync and Async calls
+    - Blocking vs Non-blocking
+# Rate Limiting
+
+4. 
+# Monolithic vs Microservices
+ - cover all microservices patterns like SAGA etc.
+
+5.
+# Caching
+    - Cache writing policies
+    - Types of chache REDIS, JUNO (L1 cache, L2 cache)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onclick="this.innerHTML='HELLO WORLD!'">Form Selector</h1>
+    <form id="frm1" action="">
+      <label for="">First Name</label>
+      <input type="text" placeholder="enter your first name" />
+      <br />
+      <label for="">Last Name</label>
+      <input type="text" placeholder="enter your last name" />
+      <br />
+      <label for="">Email</label>
+      <input type="email" placeholder="enter your email" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="demo"></p>
+    <script>
+      document.addEventListener("submit", function () {
+        event.preventDefault();
+        alert("Form submitted");
+        const form = document.forms["frm1"];
+
+        let txt = "";
+
+        for (let i = 0; i < form.length; i++) {
+          if (form[i].type === "text" || form[i].type === "email") {
+            txt += form[i].value + "<br>";
+          }
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+      });
+    </script>
+  </body>
+</html>
