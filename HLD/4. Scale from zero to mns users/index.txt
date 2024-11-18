@@ -1,0 +1,9 @@
+1. Single Server
+2. Application and DB Server Separation
+3. Load Balancing + Multi app Server
+4. Database replication (Master - Slave DB concept)
+5. Cache
+6. CDN(Content Delivery Network)
+7. Data center
+8. Message Queue
+9. Database scaling - Sharding

@@ -1,0 +1,5 @@
+it can be asked in many forms like.
+1. Design Data resilience architecture
+2. Design architecture to achieve 99.99% availability
+3. Design to avoid SINGL POINT OF FAILURE
+4. Actyv-passive vs Active -active architecture

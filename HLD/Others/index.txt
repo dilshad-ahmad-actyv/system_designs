@@ -4,3 +4,10 @@
 4. OSI vs TCP/IP model
 5. HUB, Switch, Router, Bridge
 6. IP and MAC Address
+7. WordPress
+*****
+7. Edge computing
+8. Low-code/No-code development
+9. Quantom computing
+10. Digital Ethics
+11. Green Tech Skills
