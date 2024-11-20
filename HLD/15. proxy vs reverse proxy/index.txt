@@ -1,0 +1,5 @@
+1. What is proxy server?
+2. Types: Forward and Reverse proxy server
+3. Proxy vs VPN
+4. Proxy vs LoadBalancer
+5. Proxy vs Firewall

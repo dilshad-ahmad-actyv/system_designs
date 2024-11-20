@@ -1,0 +1,8 @@
+// Design Message queue like. Kafka, RabbitMQ
+1. What is messaging queue
+2. what is point to point and pub/sub messaging types
+3. How messaging queue works:
+  - Kafka
+  - RabbitMQ
+
+4. what happens when queue size limit is reached
