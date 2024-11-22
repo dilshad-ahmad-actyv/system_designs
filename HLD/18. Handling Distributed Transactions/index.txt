@@ -1,0 +1,16 @@
+// 1. 2PC(Two phage commit)
+// 2. 3PC and SAGA
+
+What is Transaction
+ - It's refer to a set of operations which need to be performed or simply say a group of tasks which need to be performed against the DB.
+
+ It has 4 properties (ACID):
+  - Atomicity - All operations in a single transaction should be success or all should fail.
+  - Consistency - DB should be in consistent state before and after transactions.
+  - Isolation - More than one transaction that is running concurrently, appears to be serialized.
+  - Durability - After transaction successfully completed, even if DB fails, the Data should not get lost.
+
+How to handle transactions in Distributed Systems
+ - 2-phage commit
+ - 3-phage commit
+ - SAGA pattern

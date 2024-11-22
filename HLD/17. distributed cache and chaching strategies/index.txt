@@ -1,0 +1,17 @@
+Distributed Cache and chaching strategies -
+1. Cache-Aside and Read-through
+2. Write-Around and write-through
+
+1. what is chaching?
+2. What is Distributed Cache and chaching strategies?
+3. Chache strategies
+ - Cache Aside
+ - Read-through
+ - Write-Around
+ - Write through
+ - Write back
+
+ 4. Cache Eviction policies
+  - LRU
+  - FIFO
+  - LFU etc.
