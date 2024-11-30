@@ -1,10 +1,11 @@
 1. Firewalls
-2. Gateways
+2. API Gateways
 3. Routers 
 4. OSI vs TCP/IP model
 5. HUB, Switch, Router, Bridge
 6. IP and MAC Address
 7. WordPress
+8. API Gateways vs Load Balancer
 *****
 7. Edge computing
 8. Low-code/No-code development
